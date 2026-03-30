@@ -97,6 +97,12 @@ alias oo="cd ~/personal"
 alias on="nvim -c ObsidianNew"
 alias ont="nvim -c ObsidianNewFromTemplate"
 
+nvim_random_listen() {
+    local random_number="$(od -An -N2 -i /dev/random | tr -d ' ')"
+    nvim --listen "/tmp/nvim-server-$random_number" "$@"
+}
+alias nvim="nvim_random_listen"
+
 bindkey -s ^f "fzftmux\n"
 
 # Misc
