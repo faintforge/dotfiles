@@ -1,0 +1,10 @@
+show=drun
+gtk_dark=true
+allow_images=true
+image_size=244
+allow_markup=true
+insensitive=true
+key_up=Ctrl-p
+key_down=Ctrl-n
+width=250
+height=300

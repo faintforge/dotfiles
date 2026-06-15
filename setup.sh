@@ -20,6 +20,8 @@ function add_config {
 
 add_config alacritty $DOTFILES/alacritty $HOME/.config/alacritty
 add_config neovim $DOTFILES/neovim $HOME/.config/nvim
+add_config wofi $DOTFILES/wofi $HOME/.config/wofi
+add_config waybar $DOTFILES/waybar $HOME/.config/waybar
 add_config tmux $DOTFILES/tmux.conf $HOME/.tmux.conf
 add_config zsh $DOTFILES/zshrc $HOME/.zshrc
 add_config scripts $DOTFILES/scripts $HOME/.scripts

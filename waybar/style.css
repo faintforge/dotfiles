@@ -1,0 +1,90 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px;
+    color: #ebdbb2;
+}
+
+window {
+    background: transparent;
+}
+
+#workspaces button {
+    background: #212121;
+    border-top: 2px solid #fb4934;
+    border-bottom: 2px solid #fb4934;
+}
+
+#workspaces button label {
+    margin-top: 5px;
+}
+
+#workspaces button.active {
+    background: #fb4934;
+}
+
+#workspaces button:last-child {
+    border-radius: 0px 8px 8px 0px;
+    border-right: 2px solid #fb4934;
+}
+
+#workspaces button:first-child {
+    border-radius: 8px 0px 0px 8px;
+    border-left: 2px solid #fb4934;
+}
+
+#workspaces button:only-child {
+    border: 2px solid #fb4934;
+    border-radius: 8px;
+}
+
+#backlight {
+    color: #fabd2f;
+    border: 1px solid #fabd2f;
+    border-radius: 8px;
+    padding: 8px;
+    background: #212121;
+}
+
+#battery {
+    color: #b8bb26;
+    border: 1px solid #b8bb26;
+    border-radius: 8px;
+    padding: 8px;
+    background: #212121;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #fb4934;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#clock {
+    color: #8ec07c;
+    border: 1px solid #8ec07c;
+    border-radius: 8px;
+    padding: 8px;
+    background: #212121;
+}
+
+#clock.date {
+    color: #d3869b;
+    border: 1px solid #d3869b;
+    border-radius: 8px;
+    padding: 8px;
+    background: #212121;
+}

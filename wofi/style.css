@@ -1,0 +1,34 @@
+* {
+  color: #ebdbb2;
+}
+
+#window {
+  background-color: rgba(40, 40, 40, 0.75);
+  border-radius: 8px;
+}
+
+#outer-box {
+  padding: 8px;
+}
+
+#input {
+  background-color: rgba(40, 40, 40, 0.75);
+  margin-bottom: 8px;
+  border: 2px solid #3c3836;
+  border-radius: 8px;
+}
+
+#input:focus {
+  border-color: #fb4934;
+  box-shadow: none;
+}
+
+#entry {
+  /* background-color: rgba($color0, $bg-opacity); */
+  background-color: transparent;
+}
+
+#entry:selected {
+  background-color: #cc241d;
+  border-radius: 4px;
+}

@@ -1,0 +1,36 @@
+@use "theme" as *;
+
+* {
+    color: $color2;
+}
+
+#window {
+    background-color: rgba($color0, $bg-opacity);
+    border-radius: 8px;
+}
+
+#outer-box {
+    padding: 8px;
+}
+
+#input {
+    background-color: rgba($color0, $bg-opacity);
+    margin-bottom: 8px;
+    border: 2px solid $color1;
+    border-radius: 8px;
+}
+
+#input:focus {
+    border-color: $color3;
+    box-shadow: none;
+}
+
+#entry {
+    /* background-color: rgba($color0, $bg-opacity); */
+    background-color: transparent;
+}
+
+#entry:selected {
+    background-color: $color4;
+    border-radius: 4px;
+}
