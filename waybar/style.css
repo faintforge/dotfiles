@@ -40,6 +40,14 @@ window {
     border-radius: 8px;
 }
 
+#pulseaudio {
+    color: #83a598;
+    border: 1px solid #83a598;
+    border-radius: 8px;
+    padding: 8px;
+    background: #212121;
+}
+
 #backlight {
     color: #fabd2f;
     border: 1px solid #fabd2f;
