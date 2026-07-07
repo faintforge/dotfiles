@@ -238,6 +238,15 @@ require("lazy").setup({
                     end
                 },
             })
+
+            vim.lsp.config("clangd", {
+                cmd = {
+                    "clangd",
+                    "--background-index",
+                    "-j=4",
+                    "--header-insertion=never",
+                },
+            })
         end
     },
     {
