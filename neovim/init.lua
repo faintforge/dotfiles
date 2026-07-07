@@ -449,6 +449,10 @@ require("lazy").setup({
             })
         end
     },
+    {
+        "j-hui/fidget.nvim",
+        opts = {},
+    }
 }, {
     checker = { enabled = true }
 })
