@@ -26,6 +26,7 @@ add_config tmux $DOTFILES/tmux.conf $HOME/.tmux.conf
 add_config zsh $DOTFILES/zshrc $HOME/.zshrc
 add_config scripts $DOTFILES/scripts $HOME/.scripts
 add_config hypr $DOTFILES/hypr $HOME/.config/hypr
+add_config ghostty $DOTFILES/ghostty $HOME/.config/ghostty
 
 #
 # TPM
