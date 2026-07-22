@@ -3,6 +3,7 @@
     "modules-left": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio", "backlight", "battery", "clock", "clock#date"],
     "spacing": 8,
+    "gap": 5,
     "battery": {
         "states": {
             // "good": 95,

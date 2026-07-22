@@ -11,6 +11,11 @@ window {
     background: transparent;
 }
 
+window > box {
+    /* margin: 10px; */
+    /* margin-bottom: 5px; */
+}
+
 #workspaces button {
     background: #212121;
     border-top: 2px solid #fb4934;
@@ -42,7 +47,7 @@ window {
 
 #pulseaudio {
     color: #83a598;
-    border: 1px solid #83a598;
+    border: 2px solid #83a598;
     border-radius: 8px;
     padding: 8px;
     background: #212121;
@@ -50,7 +55,7 @@ window {
 
 #backlight {
     color: #fabd2f;
-    border: 1px solid #fabd2f;
+    border: 2px solid #fabd2f;
     border-radius: 8px;
     padding: 8px;
     background: #212121;
@@ -58,7 +63,7 @@ window {
 
 #battery {
     color: #b8bb26;
-    border: 1px solid #b8bb26;
+    border: 2px solid #b8bb26;
     border-radius: 8px;
     padding: 8px;
     background: #212121;
@@ -83,7 +88,7 @@ window {
 
 #clock {
     color: #8ec07c;
-    border: 1px solid #8ec07c;
+    border: 2px solid #8ec07c;
     border-radius: 8px;
     padding: 8px;
     background: #212121;
@@ -91,7 +96,7 @@ window {
 
 #clock.date {
     color: #d3869b;
-    border: 1px solid #d3869b;
+    border: 2px solid #d3869b;
     border-radius: 8px;
     padding: 8px;
     background: #212121;

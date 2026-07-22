@@ -14,7 +14,7 @@ normal = {
 
 [window]
 dynamic_title = true
-opacity = 0.90
+opacity = 0.80
 padding = {
     x = 8,
     y = 8,
