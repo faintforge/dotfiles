@@ -35,7 +35,7 @@ hl.monitor({
 ---------------------
 
 -- Set programs that you use
-local terminal    = "alacritty"
+local terminal    = "ghostty"
 local fileManager = "dolphin"
 local menu        = "wofi -C $HOME/.config/wofi/wofi/gruvbox_dark.colors"
 
@@ -57,6 +57,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("dunst")
   hl.exec_cmd("awww-daemon")
   hl.exec_cmd("hypridle")
+  hl.exec_cmd("ibus start --type wayland")
 end)
 
 
