@@ -3,6 +3,7 @@ bindkey -v
 autoload -U compinit && compinit -u
 
 # History
+mkdir -p ~/.cache/zsh
 HISTFILE=~/.cache/zsh/histfile
 HISTSIZE=5000
 SAVEHIST=$HISTSIZE
