@@ -50,3 +50,15 @@ EOF
 else
     echo -e "${FAINT}alacritty_local.toml found - skipping...${ENDFMT}"
 fi
+
+#
+# Ghostty local
+#
+if [ ! -e "$HOME/.config/ghostty/config_local.ghostty" ]; then
+    cat > "$HOME/.config/ghostty/config_local.ghostty" << "EOF"
+font-size = 12.0
+EOF
+    echo -e "${GREEN}config_local.ghostty created!${ENDFMT}"
+else
+    echo -e "${FAINT}config_local.ghostty found - skipping...${ENDFMT}"
+fi

@@ -1,9 +1,10 @@
+config-file = config_local.ghostty
 theme = Gruvbox Dark
 font-family = Roboto Mono
-font-size = 12
 background-opacity = 0.8
 window-padding-x = 8
 window-padding-y = 8
 window-vsync = true
 shell-integration-features = no-cursor
 cursor-style = block
+window-decoration = none
