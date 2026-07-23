@@ -5,6 +5,6 @@ background-opacity = 0.8
 window-padding-x = 8
 window-padding-y = 8
 window-vsync = true
-shell-integration-features = no-cursor
+shell-integration-features = no-cursor,ssh-env
 cursor-style = block
 window-decoration = none
