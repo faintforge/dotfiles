@@ -21,17 +21,17 @@ autoload -U colors && colors
 
 autoload -Uz vcs_info
 precmd() { vcs_info }
-zstyle ":vcs_info:git:*" formats " %F{9}(%f%F{11}%b%f%F{9})%f"
+zstyle ':vcs_info:git:*' formats ' %F{9}(%f%F{11}%b%f%F{9})%f'
 
-setopt prompt_subst
+setopt PROMPT_SUBST
 prompt_cursor() {
     if [[ $? -eq 0 ]]; then
-        echo "%F{10}>%f"
+        echo '%F{10}>%f'
     else
-        echo "%F{9}>%f"
+        echo '%F{9}>%f'
     fi
 }
-PROMPT="%F{13}%~%f${vcs_info_msg_0_} %B$(prompt_cursor)%b "
+PROMPT='%F{13}%~%f${vcs_info_msg_0_} %B$(prompt_cursor)%b '
 
 # Environment
 add_path() {
