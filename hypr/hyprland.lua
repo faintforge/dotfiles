@@ -284,11 +284,16 @@ hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("grim - | wl-copy -t image/png"))
 hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd("grim -g $(slurp -d) | wl-copy -t image/png"))
 
--- Move focus with mainMod + arrow keys
-hl.bind(mainMod .. " + L",  hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + K",    hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + J",  hl.dsp.focus({ direction = "down" }))
+-- Move focus with mainMod + vim binds
+hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
+
+hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
+hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "up" }))
+hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
