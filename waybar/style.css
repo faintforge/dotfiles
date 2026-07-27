@@ -21,8 +21,14 @@ window > box {
     padding-right: 10px;
 }
 
+#workspaces button:hover {
+	background: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
 #workspaces button label {
-    margin-top: 4px;
+    padding-top: 4px;
 }
 
 #workspaces button {
