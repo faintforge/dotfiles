@@ -2,8 +2,22 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio", "backlight", "battery", "clock", "clock#date"],
-    "spacing": 8,
-    "gap": 5,
+    "spacing": 20,
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "10": "1",
+            "11": "2",
+            "12": "3",
+            "13": "4",
+            "14": "5",
+            "15": "6",
+            "16": "7",
+            "17": "8",
+            "18": "9",
+        },
+        "all-outputs": false,
+    },
     "battery": {
         "states": {
             // "good": 95,

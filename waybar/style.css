@@ -1,7 +1,9 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
+    padding: 0;
+    margin: 0;
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 11pt;
     border: none;
     border-radius: 0px;
     color: #ebdbb2;
@@ -12,61 +14,42 @@ window {
 }
 
 window > box {
-    /* margin: 10px; */
-    /* margin-bottom: 5px; */
-}
-
-#workspaces button {
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     background: #212121;
-    border-top: 2px solid #fb4934;
-    border-bottom: 2px solid #fb4934;
+    padding-right: 10px;
 }
 
 #workspaces button label {
-    margin-top: 5px;
+    margin-top: 4px;
+}
+
+#workspaces button {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+#workspaces button:not(.empty) {
+    background-color: #504945;
 }
 
 #workspaces button.active {
-    background: #fb4934;
-}
-
-#workspaces button:last-child {
-    border-radius: 0px 8px 8px 0px;
-    border-right: 2px solid #fb4934;
-}
-
-#workspaces button:first-child {
-    border-radius: 8px 0px 0px 8px;
-    border-left: 2px solid #fb4934;
-}
-
-#workspaces button:only-child {
-    border: 2px solid #fb4934;
-    border-radius: 8px;
+    background-color: #fb4934;
 }
 
 #pulseaudio {
     color: #83a598;
-    border: 2px solid #83a598;
-    border-radius: 8px;
-    padding: 8px;
-    background: #212121;
 }
 
 #backlight {
     color: #fabd2f;
-    border: 2px solid #fabd2f;
-    border-radius: 8px;
-    padding: 8px;
-    background: #212121;
 }
 
 #battery {
     color: #b8bb26;
-    border: 2px solid #b8bb26;
-    border-radius: 8px;
-    padding: 8px;
-    background: #212121;
 }
 
 @keyframes blink {
@@ -88,16 +71,8 @@ window > box {
 
 #clock {
     color: #8ec07c;
-    border: 2px solid #8ec07c;
-    border-radius: 8px;
-    padding: 8px;
-    background: #212121;
 }
 
 #clock.date {
     color: #d3869b;
-    border: 2px solid #d3869b;
-    border-radius: 8px;
-    padding: 8px;
-    background: #212121;
 }
