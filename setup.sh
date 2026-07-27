@@ -8,13 +8,16 @@ GREEN="\e[1;92m"
 FAINT="\e[2m"
 ENDFMT="\e[0m"
 
+echo -e "Initializing git submodules"
+git submodule update --init
+
 function add_config {
     # Check for both existing files/dirs and symlinks.
     if [ ! -e "$3" ] && [ ! -L "$3" ]; then
         ln -sf $2 $3
         echo -e "${GREEN}$1 configured!${ENDFMT}"
     else
-        echo -e "${FAINT}$1 config found - skipping...${ENDFMT}"
+        echo -e "${FAINT}$1 config found - skipping${ENDFMT}"
     fi
 }
 
@@ -35,7 +38,7 @@ if [ ! -e "$HOME/.tmux/plugins/tpm" ]; then
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
     echo -e "${GREEN}TPM installed!${ENDFMT}"
 else
-    echo -e "${FAINT}TPM found - skipping...${ENDFMT}"
+    echo -e "${FAINT}TPM found - skipping${ENDFMT}"
 fi
 
 #
@@ -48,7 +51,7 @@ size = 13.0
 EOF
     echo -e "${GREEN}alacritty_local.toml created!${ENDFMT}"
 else
-    echo -e "${FAINT}alacritty_local.toml found - skipping...${ENDFMT}"
+    echo -e "${FAINT}alacritty_local.toml found - skipping${ENDFMT}"
 fi
 
 #
@@ -60,7 +63,7 @@ font-size = 12.0
 EOF
     echo -e "${GREEN}config_local.ghostty created!${ENDFMT}"
 else
-    echo -e "${FAINT}config_local.ghostty found - skipping...${ENDFMT}"
+    echo -e "${FAINT}config_local.ghostty found - skipping${ENDFMT}"
 fi
 
 #
