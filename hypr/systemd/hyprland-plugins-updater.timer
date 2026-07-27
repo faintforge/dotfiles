@@ -1,0 +1,10 @@
+[Unit]
+Description=Update Hyprland plugins on boot and after updates
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=1h
+Presistent=true
+
+[Install]
+WantedBy=timers.target

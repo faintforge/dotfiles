@@ -62,3 +62,17 @@ EOF
 else
     echo -e "${FAINT}config_local.ghostty found - skipping...${ENDFMT}"
 fi
+
+#
+# Hyprland plugins
+#
+if command -v hyprland &> /dev/null; then
+    echo "Hyprland found - installing plugins"
+
+    # 'install' instead of 'ln -sf' because systemd doesn't allow symfiles
+    install -m 644 -D hypr/systemd/hyprland-plugins-updater.service $HOME/.config/systemd/user/hyprland-plugins-updater.service
+    install -m 644 -D hypr/systemd/hyprland-plugins-updater.timer $HOME/.config/systemd/user/hyprland-plugins-updater.timer
+
+    systemctl daemon-reload --user
+    systemctl enable --user --now hyprland-plugins-updater.timer
+fi

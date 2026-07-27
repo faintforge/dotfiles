@@ -1,0 +1,6 @@
+[Unit]
+Description=Update Hyprland plugins
+
+[Service]
+ExecStart=%h/.config/hypr/update-plugins.sh
+Type=oneshot
