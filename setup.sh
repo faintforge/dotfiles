@@ -67,6 +67,19 @@ else
 fi
 
 #
+# Hyprland local
+#
+if [ ! -e "$HOME/.config/hypr/hyprland/local.lua" ]; then
+    cat > "$HOME/.config/hypr/hyprland/local.lua" << "EOF"
+-- require("hyprland.desktop")
+-- require("hyprland.laptop")
+EOF
+    echo -e "${GREEN}hyprland/local.lua created!${ENDFMT}"
+else
+    echo -e "${FAINT}hyprland/local.lua found - skipping...${ENDFMT}"
+fi
+
+#
 # Hyprland plugins
 #
 if command -v hyprland &> /dev/null; then
