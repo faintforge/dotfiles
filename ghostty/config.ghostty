@@ -8,3 +8,4 @@ window-vsync = true
 shell-integration-features = no-cursor,ssh-env
 cursor-style = block
 window-decoration = none
+window-inherit-working-directory = false
