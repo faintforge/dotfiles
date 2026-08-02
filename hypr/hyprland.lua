@@ -227,6 +227,10 @@ hl.config({
             output = "current",
         },
     },
+
+    cursor = {
+        no_warps = true,
+    },
 })
 
 hl.gesture({
