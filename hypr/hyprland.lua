@@ -258,7 +258,7 @@ hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(menu))
 
 -- Screenshotting
 hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("grim - | wl-copy -t image/png"))
-hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd("grim -g $(slurp -d) | wl-copy -t image/png"))
+hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd("grim -g \"$(slurp -d)\" - | wl-copy -t image/png"))
 
 -- Move focus with mainMod + vim binds
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
