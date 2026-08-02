@@ -46,6 +46,16 @@ window > box {
     background-color: #fb4934;
 }
 
+@keyframes workspace-blink {
+    to {
+        background-color: #a89984;
+    }
+}
+
+#workspaces button.urgent {
+    animation: 1s infinite alternate workspace-blink;
+}
+
 #wireplumber {
     color: #83a598;
 }
