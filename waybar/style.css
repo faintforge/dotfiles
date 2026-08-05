@@ -15,8 +15,8 @@ window {
 
 window > box {
     padding: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /* border-bottom-left-radius: 5px; */
+    /* border-bottom-right-radius: 5px; */
     background: #212121;
     padding-right: 10px;
 }
