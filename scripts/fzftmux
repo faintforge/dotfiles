@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-project_dir="$(echo -e "$(find -L $HOME/coding -mindepth 1 -maxdepth 2 -type d -print)$(find -L $HOME/.config -mindepth 1 -maxdepth 1 -type d -print)\n$HOME/personal" | fzf)"
+project_dir="$(echo -e "$(find -L $HOME/coding -mindepth 1 -maxdepth 2 -type d -print)\n$(find -L $HOME/.config -mindepth 1 -maxdepth 1 -type d -print)" | fzf)"
 
 # Don't do anything!
 if [[ -z $project_dir ]]; then
