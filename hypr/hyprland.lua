@@ -35,6 +35,9 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("awww-daemon")
   hl.exec_cmd("hypridle")
   hl.exec_cmd("ibus start --type wayland")
+  -- Do this because otherwise split-monitor-workspaces runs its setup before
+  -- all monitors have fully been registered.
+  hl.exec_cmd("sleep 1 && hyprctl reload")
 end)
 
 
@@ -372,3 +375,4 @@ else
         hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
     end
 end
+
