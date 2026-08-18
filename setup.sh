@@ -21,6 +21,8 @@ function add_config {
     fi
 }
 
+mkdir -p $HOME/.config
+
 add_config alacritty $DOTFILES/alacritty $HOME/.config/alacritty
 add_config neovim $DOTFILES/neovim $HOME/.config/nvim
 add_config wofi $DOTFILES/wofi $HOME/.config/wofi
