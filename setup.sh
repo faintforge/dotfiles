@@ -117,8 +117,8 @@ if [[ -e /proc/acpi/button/lid ]]; then
     sudo mkdir -p /etc/systemd/logind.conf.d/
     sudo mkdir -p /etc/systemd/sleep.conf.d/
 
-    sudo ln -snf "$DOTFILES/systemd/logind-lid.conf" "/etc/systemd/logind.conf.d/90-lid.conf"
-    sudo ln -snf "$DOTFILES/systemd/sleep-hibernate.conf" "/etc/systemd/sleep.conf.d/90-hibernate.conf"
+    sudo install -m 644 "$DOTFILES/systemd/logind-lid.conf" "/etc/systemd/logind.conf.d/90-lid.conf"
+    sudo install -m 644 "$DOTFILES/systemd/sleep-hibernate.conf" "/etc/systemd/sleep.conf.d/90-hibernate.conf"
     echo -e "${WHITE}Lid detected - power management installed!${ENDFMT}"
 else
     echo -e "${FAINT}No lid detected - power management skipped...${ENDFMT}"
