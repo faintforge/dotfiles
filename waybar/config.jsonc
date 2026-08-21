@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["wireplumber", "backlight", "battery", "clock", "clock#date"],
+    "modules-right": ["network", "wireplumber", "backlight", "battery", "clock", "clock#date"],
     "spacing": 20,
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -14,9 +14,9 @@
             "15": "6",
             "16": "7",
             "17": "8",
-            "18": "9",
+            "18": "9"
         },
-        "all-outputs": false,
+        "all-outputs": false
     },
     "battery": {
         "states": {
@@ -44,5 +44,11 @@
     },
     "backlight": {
         "format": "  {percent}%"
+    },
+    "network": {
+        "format-wifi": "{icon}  {essid} ({signalStrength}%)",
+        "format-disconnected": "󰤭",
+        "on-click": "networkmanager_dmenu",
+        "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"]
     }
 }

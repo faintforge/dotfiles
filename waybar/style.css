@@ -92,3 +92,11 @@ window > box {
 #clock.date {
     color: #d3869b;
 }
+
+#network {
+    color: #a89984;
+}
+
+#network.disconnected {
+    color: #fb4934;
+}
