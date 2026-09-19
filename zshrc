@@ -40,6 +40,7 @@ add_path() {
 }
 
 add_path "$HOME/.scripts"
+add_path "$HOME/.local/share/coursier/bin"
 
 export MANPAGER="nvim +Man!"
 export EDITOR="nvim"
