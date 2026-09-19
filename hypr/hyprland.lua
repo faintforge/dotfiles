@@ -35,6 +35,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("awww-daemon")
   hl.exec_cmd("hypridle")
   hl.exec_cmd("ibus start --type wayland")
+  hl.exec_cmd("pipewire-audio-idle-inhibit")
   -- Do this because otherwise split-monitor-workspaces runs its setup before
   -- all monitors have fully been registered.
   hl.exec_cmd("sleep 1 && hyprctl reload")
