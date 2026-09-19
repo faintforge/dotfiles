@@ -83,6 +83,8 @@ window > box {
     animation-timing-function: steps(12);
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    border-radius: 10px;
+    padding: 0px 5px 0px 5px;
 }
 
 #clock {
